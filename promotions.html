@@ -1,0 +1,113 @@
+<!-- Promotions Section -->
+			<div id="Promotions" class="text-center">
+			<p class="box-heading">Promotions</p>
+			  <section class="customer-logos slider" data-arrows="true">
+				<div class="slide"><div>
+						<h3><span class="curPt" onclick="toggleVisibility('Menu1');">December</span></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><span class="curPt" onclick="toggleVisibility('Menu2');">January</span></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><span class="curPt" onclick="toggleVisibility('Menu3');">February</span></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><span class="curPt" onclick="toggleVisibility('Menu4');">March</span></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><span class="curPt" onclick="toggleVisibility('Menu5');">April</span></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><span class="curPt" onclick="toggleVisibility('Menu6');">May</span></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><span class="curPt" onclick="toggleVisibility('Menu7');">June</span></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><span class="curPt" onclick="toggleVisibility('Menu8);">July</span></h3>
+					</div></div>
+			  </section>
+			</div>
+			<div id="Menu1" class="newsbg" style="display: none;"><p>December</p><p><strong>Date</strong>: 01-12-21</p><p><strong>Link</strong> : <a href="#" class="linkbtn">View</a></p></div>
+			<div id="Menu2" class="newsbg" style="display: none;"><p>January</p><p><strong>Date</strong>: 01-01-22</p><p><strong>Link</strong> : <a href="#" class="linkbtn">View</a></p></div>
+			<div id="Menu3" class="newsbg" style="display: none;"><p>February</p><p><strong>Date</strong>: 01-02-21</p><p><strong>Link</strong> : <a href="#" class="linkbtn">View</a></p></div>
+			<div id="Menu4" class="newsbg" style="display: none;"><p>March</p><p><strong>Date</strong>: 01-03-21</p><p><strong>Link</strong> : <a href="#" class="linkbtn">View</a></p></div>
+			<div id="Menu5" class="newsbg" style="display: none;"><p>April</p><p><strong>Date</strong>: 01-04-21</p><p><strong>Link</strong> : <a href="#" class="linkbtn">View</a></p></div>
+			<div id="Menu6" class="newsbg" style="display: none;"><p>May</p><p><strong>Date</strong>: 01-05-21</p><p><strong>Link</strong> : <a href="#" class="linkbtn">View</a></p></div>
+			<div id="Menu7" class="newsbg" style="display: none;"><p>June</p><p><strong>Date</strong>: 01-06-21</p><p><strong>Link</strong> : <a href="#" class="linkbtn">View</a></p></div>
+			<div id="Menu8" class="newsbg" style="display: none;"><p>July</p><p><strong>Date</strong>: 01-07-21</p><p><strong>Link</strong> : <a href="#" class="linkbtn">View</a></p></div>
+			<footer>
+    <div class="footer-bg">
+		<div class="box-body">
+        	<a href="categories.html"><img src="images/back.png" alt="back"></a>
+		</div>
+    </div>
+</footer>
+<style>
+.curPt{
+cursor:pointer;
+}
+.newsbg{
+background: #e39a17;
+font-size:18px;
+color:#000;
+padding: 20px;
+margin-bottom: 20px;
+}
+.linkbtn{
+color: #fff;
+border: 1px solid #000;
+padding: 3px 22px;
+background: #000;
+text-transform: capitalize;
+font-size: 16px;
+}
+</style>
+<script type="text/javascript">
+		$(document).ready(function() {
+ 		  $('.customer-logos').slick({
+   			slidesToShow: 6,
+    		slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			arrows: true,
+			dots: false,
+			pauseOnHover: true,
+			responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 4
+			}
+			}, {
+			breakpoint: 520,
+			settings: {
+				slidesToShow: 3
+			}
+			}]
+		});
+	});
+     </script>		
+<script>
+	  var divs = ["Menu1", "Menu2", "Menu3", "Menu4","Menu5","Menu6","Menu7","Menu8"];
+		var visibleDivId = null;
+		function toggleVisibility(divId) {
+		  if(visibleDivId === divId) {
+			//visibleDivId = null;
+		  } else {
+			visibleDivId = divId;
+		  }
+		  hideNonVisibleDivs();
+		}
+		function hideNonVisibleDivs() {
+		  var i, divId, div;
+		  for(i = 0; i < divs.length; i++) {
+			divId = divs[i];
+			div = document.getElementById(divId);
+			if(visibleDivId === divId) {
+			  div.style.display = "block";
+			} else {
+			  div.style.display = "none";
+			}
+		  }
+		}
+	 </script>	 

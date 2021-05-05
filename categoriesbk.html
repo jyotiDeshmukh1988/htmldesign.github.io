@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>JM Handel</title>
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- Slick Slider CSS -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+     <link href="album.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+   <style>
+	/* Slider */
+.slick-slide {
+  margin: 0px 5px;
+}
+
+.customer-logos {
+  overflow: inherit;
+  border-top: 0px solid #353535;
+  border-bottom: 0px solid #353535;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-track::before,
+.slick-track::after {
+  display: table;
+  content: '';
+}
+
+.slick-track::after {
+  clear: both;
+}
+
+.slick-track {
+  padding: 1rem 0;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+  color: #fff;
+  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+  border: none;
+  width: 2rem;
+  height: 1.5rem;
+  text-indent: -10000px;
+  margin-top: -16px;
+  z-index: 99;
+}
+
+.slick-arrow.slick-next {
+  right: -18px;
+  transform: rotateY(180deg);
+  overflow: hidden;
+}
+
+.slick-arrow.slick-prev {
+  left: -18px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+	.customer-logos h3{
+	background: #e39a17;
+  color: #fff;
+  font-size: 20px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+	}
+	.customer-logos h3 a{
+	color:#fff;
+	}
+	.slick-arrow{
+	outline: 0px !important;
+	width: 3rem;
+	}
+	
+	</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<main role="main">
+	<div class="bg-custom">
+        <div class="container">
+			<div class="row">
+				<div class="col-md-6 overview">
+				  <a href="#about" target="_self">
+				  <div class="box box-shadow">
+					<div class="box-body">
+					  <img src="images/video-icon.png" alt="videos">
+					  <p class="box-heading">Videos</p>
+					</div>
+				  </div>
+				  </a>
+				</div>
+				<div class="col-md-6 Catalogues">
+				  <a href="#services" target="_self">
+				  <div class="box box-shadow">
+					<div class="box-body">
+					  <img src="images/product-icon.png" alt="product-catalogue">
+					  <p class="box-heading">Product Catalogues</p>
+					</div>
+				  </div>
+				  </a>
+				</div>
+				<div class="col-md-6 newsslider">
+				  <a href="#newsletter" target="_self">
+				  <div class="box box-shadow">
+					<div class="box-body">
+					  <img src="images/newsletter-icon.png" alt="newsletter">
+					  <p class="box-heading">Newsletter</p>
+					</div>
+				  </div>
+				  </a>
+				</div>
+				<div class="col-md-6 Promo">
+				  <a href="#Promotions" target="_self">
+				  <div class="box box-shadow">
+					<div class="box-body">
+					  <img src="images/promotions-icon.png" alt="promotions">
+					  <p class="box-heading">Promotions</p>
+					</div>
+				  </div>
+				  </a>
+				</div>
+				<div class="col-md-6 Advert">
+				  <a href="#Advertising" target="_self">
+				  <div class="box box-shadow">
+					<div class="box-body">
+					  <img src="images/social-post-icon.png" alt="social-post">
+					  <p class="box-heading">Advertising</p>
+					</div>
+				  </div>
+				  </a>
+				</div>
+				<div class="col-md-6">
+				  <a href="https://jmhandel.dk/" target="_blank">
+				  <div class="box box-shadow">
+					<div class="box-body">
+					  <img src="images/jm-logo.png" alt="JM Handel">
+					  <p class="box-head">www.jmhandel.dk</p>
+					</div>
+				  </div>
+				  </a>
+				</div>
+			</div>
+			<!-- Container (About Section) -->
+			<div id="about" class="">
+			  <div class="row">
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Fantasy Rammer</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Aluminiums-profiler</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="https://www.youtube.com/playlist?list=PLhqYm2LbpAJRMoHPkDe949xhcHIwrhq1S" target="_blank">Trælister</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Fantasy Rammer</a></div>
+					</div>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Fantasy Rammer</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Aluminiums-profiler</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Trælister</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Fantasy Rammer</a></div>
+					</div>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Fantasy Rammer</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Aluminiums-profiler</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Trælister</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="box smallbox-shadow">
+						<div class="smallbox-body"><a href="#">Fantasy Rammer</a></div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<!-- Container (Services Section) -->
+			<div id="services" class="text-center">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="box smallbox-shadow">
+							<div class="smallbox-body"><a href="https://jmhandel.dk/wp-content/uploads/2020/10/J-M-Handel-ApS-katalog-uden-priser-2020-1.pdf" target="_blank">Prisliste katalog</a></div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="box smallbox-shadow">
+							<div class="smallbox-body"><a href="https://jmhandel.dk/wp-content/uploads/2021/02/J-M-Handel-ApS-Listekatalog-2018..pdf" target="_blank">Træliste katalog</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Newsletter Section -->
+			<div id="newsletter" class="text-center">
+			<p class="box-heading">Newsletter</p>
+			  <section class="customer-logos slider" data-arrows="true">
+				<div class="slide"><div>
+						<h3><a href="#">December</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">January</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">February</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">March</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">April</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">May</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">June</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">July</a></h3>
+					</div></div>
+			  </section>
+			</div> 
+			<!-- Promotions Section -->
+			<div id="Promotions" class="text-center">
+			<p class="box-heading">Promotions</p>
+			  <section class="customer-logos slider" data-arrows="true">
+				<div class="slide"><div>
+						<h3><a href="#">December</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">January</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">February</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">March</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">April</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">May</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">June</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">July</a></h3>
+					</div></div>
+			  </section>
+			</div> 
+			<!-- Advertising Section -->
+			<div id="Advertising" class="text-center">
+			<p class="box-heading">Advertising</p>
+			  <section class="customer-logos slider" data-arrows="true">
+				<div class="slide"><div>
+						<h3><a href="#">December</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">January</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">February</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">March</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">April</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">May</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">June</a></h3>
+					</div></div>
+				<div class="slide"><div>
+						<h3><a href="#">July</a></h3>
+					</div></div>
+			  </section>
+			</div> 	
+		</div>
+	</div>
+</main>
+<footer>
+    <div class="footer-bg">
+		<div class="box-body">
+        	<a href="#myPage"><img src="images/back.png" alt="back"></a>
+		</div>
+    </div>
+</footer>
+<script>
+$(document).ready(function(){
+$('#about').hide();
+$('#services').hide();
+$('#newsletter').hide();
+$('#Promotions').hide();
+$('#Advertising').hide();
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".overview a, footer a[href='#myPage']").on('click', function(event) {
+  $('#about').show();
+  $('#services').hide();
+$('#newsletter').hide();
+$('#Promotions').hide();
+$('#Advertising').hide();
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".Catalogues a, footer a[href='#myPage']").on('click', function(event) {
+  $('#services').show();
+  $('#about').hide();
+   $('#newsletter').hide();
+   $('#Promotions').hide();
+$('#Advertising').hide();
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".newsslider a").on('click', function(event) {
+  $('#services').hide();
+  $('#about').hide();
+  $('#newsletter').show();
+  $('#Promotions').hide();
+$('#Advertising').hide();
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 2000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+   // Add smooth scrolling to all links in navbar + footer link
+  $(".Promo a").on('click', function(event) {
+  $('#services').hide();
+  $('#about').hide();
+  $('#newsletter').hide();
+  $('#Promotions').show();
+$('#Advertising').hide();
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 2000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+   // Add smooth scrolling to all links in navbar + footer link
+  $(".Advert a").on('click', function(event) {
+  $('#services').hide();
+  $('#about').hide();
+  $('#newsletter').hide();
+  $('#Promotions').hide();
+$('#Advertising').show();
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<script type="text/javascript">
+		$(document).ready(function() {
+ 		  $('.customer-logos').slick({
+   			slidesToShow: 6,
+    		slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 1000,
+			arrows: true,
+			dots: false,
+			pauseOnHover: false,
+			responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 4
+			}
+			}, {
+			breakpoint: 520,
+			settings: {
+				slidesToShow: 3
+			}
+			}]
+		});
+		});
+     </script>
+  </body>
+</html>
